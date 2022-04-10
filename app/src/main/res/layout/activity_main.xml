@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <EditText
+      android:hint="Email adress"
+      android:background="@drawable/custom_input"
+      android:drawableStart="@drawable/custom_email_icon"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:drawablePadding="12dp"
+      android:paddingStart="12dp"
+      android:paddingEnd="12dp"
+      android:id="@+id/gmail"
+      android:inputType="textEmailAddress"
+      android:textSize="14sp"
+      android:layout_marginHorizontal="16dp"
+      android:paddingHorizontal="16dp"
+      android:layout_marginTop="16dp"
+      android:importantForAutofill="no" />
+
+  <EditText
+        android:hint="Themes"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_dehaze_icone"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/themes"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingHorizontal="16dp"
+        android:importantForAutofill="no" />
+
+  <EditText
+      android:hint="Text"
+      android:paddingStart="12dp"
+      android:paddingEnd="12dp"
+      android:background="@drawable/custom_input"
+      android:drawablePadding="12dp"
+      android:drawableStart="@drawable/custom_chat_icon"
+      android:id="@+id/text"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="12dp"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      android:paddingHorizontal="16dp"
+      android:textSize="14sp" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_send"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginTop="200dp"
+    android:layout_marginHorizontal="16dp"
+    android:text="@string/send"
+    android:layout_gravity="center"
+    />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btn_next"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_gravity="center"
+      android:layout_marginHorizontal="16dp"
+      android:layout_marginTop="130dp"
+      android:text="@string/next" />
+
+  <EditText
+      android:id="@+id/editTextTextEmailAddress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+
+  <EditText
+      android:id="@+id/editTextTextEmailAddress2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+
+</LinearLayout>
